@@ -8,9 +8,9 @@ require = open(os.path.join(root_path, 'requirements.txt')).readlines()
 setup(
     name='pymind',
     version='1.0.0',
-    url='https://gitlab.gwdg.de/hli1/pymind',
+    url='https://github.com/housenli/pyMIND',
     description='Python implementation of Multiscale Nemirovski Dantzig Estimators',
     packages=find_packages(),
-
+    package_dir={'pymind': 'pymind'},
     install_requires=[require]
 )
