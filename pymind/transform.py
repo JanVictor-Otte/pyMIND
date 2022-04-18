@@ -59,11 +59,11 @@ class TransformInterface:
             th: threshold in multiscale constraint
             maxIt: optional (default maxIt = 500).
                    maximum number of iterations
-            sigma: optional (default sigma = max(img.shape))
+            sigma: optional (default sigma = max(img.shape)) step size in dual problem
 
-            tau: optional (default tau = 1/sigma)
+            tau: optional (default tau = 1/sigma) step size in primal problem
 
-            theta: optional (default theta = 1)
+            theta: optional (default theta = 1) step size for extrapolation
 
             toDisp: optional (default toDisp = 2)
                     Logical value that controls information displayed to the user while the algorithm is running.
