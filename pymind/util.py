@@ -5,6 +5,9 @@ import scipy
 def stdIm(img, diff='OD1'):
     """
     Estimate the standard deviation of an image
+        OD1: ordinary difference of order 1
+        OD2: ordinary difference of order 2
+        LTO: Liu, Tanaka and Okutomi (ICIP '12; IEEE TIP '13)
     """
 
     if diff == 'OD1':
