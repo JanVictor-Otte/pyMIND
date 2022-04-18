@@ -28,6 +28,6 @@ To install this package run:
 
 Examples, as well as experiments in the paper \[1\], can be run with the file [example.py](https://gitlab.gwdg.de/hli1/pymind/-/blob/master/example.py). 
 
-## Acknowledgement
+## Copyright
 
 **pyMIND** was written by [Leo Weber](https://github.com/leoc-weber) (main author) and Housen Li. 
