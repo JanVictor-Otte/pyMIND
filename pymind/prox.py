@@ -3,7 +3,6 @@ import math
 import time
 from numpy import matlib
 
-
 def l2norm_der_ft(f, k):
     """
     Compute L2-norm of k-th derivative of f using Fourier transform
@@ -47,7 +46,6 @@ def num_grad(g):
     g_y[:,:-1] = g[:,1:] - g[:,:-1]
     
     return [g_x, g_y]
-
 
 def proxHk(v, pen, k, verbose = False):
     """
@@ -144,9 +142,6 @@ def chTV(g, pen, maxit = 500, tol = 10e-3, verbose = False):
         print("iterations in \"chTv\": ", nit)
 
     return g - w_new
-
-
-
 
 def proxl1(v, pen):
     """
