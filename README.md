@@ -30,3 +30,4 @@ Examples, as well as experiments in the paper \[1\], can be run with the file [e
 
 ## Acknowledgement
 
+**pyMIND** was written by [Leo Weber](https://github.com/leoc-weber) (main author) and Housen Li. 
