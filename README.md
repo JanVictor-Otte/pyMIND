@@ -20,13 +20,13 @@ It can be installed via:
 
     pip install https://github.com/stefanloock/pyshearlab/archive/master.zip
 
-To install this package change into its folder and run:
+To install this package run:
 
-    pip install -r requirements.txt
-    python setup.py install
+    pip install git+https://github.com/housenli/pyMIND.git
 
 ## Example
 
 Examples, as well as experiments in the paper \[1\], can be run with the file [example.py](https://gitlab.gwdg.de/hli1/pymind/-/blob/master/example.py). 
 
 ## Acknowledgement
+
