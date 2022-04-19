@@ -7,6 +7,7 @@ import pickle
 import pywt
 from numba import jit
 import warnings
+import os
 
 
 """
@@ -357,6 +358,8 @@ class Shearlet(TransformInterface):
         return prodimg
 
     def storeSim(self, data, filename):
+        if not os.path.exists(os.path.dirname(filename)):
+            os.makedirs(os.path.dirname(filename))
         shearletSim = {'mStat': data, 'shearLevels': self.shearletSystem['shearLevels'],
                        'full': self.shearletSystem['full'],
                        'QMF': self.QMF, 'DF': self.DF}
@@ -412,6 +415,8 @@ class Wavelet(TransformInterface):
             return Kimg
 
     def storeSim(self, data, filename):
+        if not os.path.exists(os.path.dirname(filename)):
+            os.makedirs(os.path.dirname(filename))
         waveletSim = {'mStat': data, 'filterType': self.filterType, 'minScale': self.minScale, 'imSize': self.imSize}
         pickle.dump(waveletSim, open(filename, 'wb'))
 
@@ -629,6 +634,8 @@ class Cube(TransformInterface):
             return res
 
     def storeSim(self, data, filename):
+        if not os.path.exists(os.path.dirname(filename)):
+            os.makedirs(os.path.dirname(filename))
         cubeSim = {'mStat': data, 'st': self.st, 'ed': self.ed, 'imSize': self.imSize}
         pickle.dump(cubeSim, open(filename, 'wb'))
 
